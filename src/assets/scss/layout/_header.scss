@@ -85,6 +85,9 @@
         font-family: $font_acumin;
         color: $black;
         overflow: hidden;
+        @include sp {
+            display: none;
+        }
         &_inner{
             position: relative;
             top: 0;
