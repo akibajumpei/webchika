@@ -20,11 +20,18 @@
     <link rel="stylesheet" href="https://use.typekit.net/wqr3nol.css">
 
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/animate.css" />
+
     <script src="./assets/js/script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="./assets/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </head>
 
     <body>
-        <div class="wapper p-top">
+        <div class="wapper p-top" id="top-top">
             <header class="l-header j-header">
     <div class="l-header_logo">
         <a href="/">
@@ -54,12 +61,12 @@
 
     <nav class="l-header_nav">
         <ul class="l-header_nav_inner">
-            <li class="l-header_nav_cmn"><a href="#" class="j-header_link">TOP</a></li>
-            <li class="l-header_nav_cmn"><a href="#" class="j-header_link">ABOUT</a></li>
-            <li class="l-header_nav_cmn"><a href="#" class="j-header_link">SERVICE</a></li>
-            <li class="l-header_nav_cmn"><a href="#" class="j-header_link">WORKS</a></li>
-            <li class="l-header_nav_cmn"><a href="#" class="j-header_link">NEWS</a></li>
-            <li class="l-header_nav_cmn"><a href="#" class="j-header_link">CONTACT</a></li>
+            <li class="l-header_nav_cmn"><a href="#top-top" class="j-header_link">TOP</a></li>
+            <li class="l-header_nav_cmn"><a href="#top-about" class="j-header_link">ABOUT</a></li>
+            <li class="l-header_nav_cmn"><a href="#top-service" class="j-header_link">SERVICE</a></li>
+            <li class="l-header_nav_cmn"><a href="#top-works" class="j-header_link">WORKS</a></li>
+            <li class="l-header_nav_cmn"><a href="#top-news" class="j-header_link">NEWS</a></li>
+            <li class="l-header_nav_cmn"><a href="#top-contact" class="j-header_link">CONTACT</a></li>
         </ul>
     </nav>
 
@@ -78,8 +85,9 @@
                             <li><a href=""><img src="./assets/img/icon_twitter.svg" alt="Twitter" width="30" height="30"></a></li>
                         </ul>
                     </section>
-                    <section class="l-about l-section">
-                        <div class="l-container">
+                    <div class="wow fadeInLeft" data-wow-duration="3s" data-wow-offset="300">
+                    <section class="l-about l-section" id="top-about">
+                        <div class="l-container" id="top-about">
                             <div class="p-top_about_cont">
                                 <div class="p-top_about_cont_text">
                                     <h2 class="c-title">ABOUT</h2>
@@ -99,7 +107,9 @@
                             </div>
                         </div>
                     </section>
-                    <section class="l-service l-section">
+                </div>
+                <div class="wow fadeInRight"　data-wow-duration="3s" data-wow-offset="300">
+                    <section class="l-service l-section" id="top-service">
                         <div class="l-container--big">
                             <h2 class="c-title--center">SERVICE</h2>
                             <ul class="p-top_service_cont">
@@ -124,8 +134,9 @@
                             </ul>
                         </div>
                     </section>
-
-                    <section class="p-top_works l-section">
+                </div>
+                <div class="wow fadeIn"　data-wow-duration="3s" data-wow-offset="300">
+                    <section class="p-top_works l-section" id="top-works">
                         <div class="l-container">
                             <h2 class="c-title">WORKS</h2>
 
@@ -182,7 +193,10 @@
                             </ul>
                         </div>
                     </section>
-                    <section class="p-top_news l-section">
+                </div>
+
+                    <div class="wow fadeInUp"　data-wow-duration="3s" data-wow-offset="300">
+                    <section class="p-top_news l-section" id="top-news">
                         <div class="l-container--big">
                             <h2 class="c-title--center">NEWS</h2>
 
@@ -218,9 +232,10 @@
                             <a href="" class="c-button--center">MORE...</a>
                         </div>
                     </section>
+                </div>
                 </main>
 
-            <footer class="l-footer">
+            <footer class="l-footer" id="top-contact">
     <div class="l-container">
         <div class="l-footer_contact">
             <h2 class="c-title--center">CONTACT</h2>

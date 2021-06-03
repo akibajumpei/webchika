@@ -3,7 +3,7 @@
 <%- include('../_include/_head') %>
 
     <body>
-        <div class="wapper p-top">
+        <div class="wapper p-top" id="top-top">
             <%- include('../_include/_header') %>
 
                 <main>
@@ -19,8 +19,9 @@
                             <li><a href=""><img src="./assets/img/icon_twitter.svg" alt="Twitter" width="30" height="30"></a></li>
                         </ul>
                     </section>
-                    <section class="l-about l-section">
-                        <div class="l-container">
+                    <div class="wow fadeInLeft" data-wow-duration="3s" data-wow-offset="300">
+                    <section class="l-about l-section" id="top-about">
+                        <div class="l-container" id="top-about">
                             <div class="p-top_about_cont">
                                 <div class="p-top_about_cont_text">
                                     <h2 class="c-title">ABOUT</h2>
@@ -40,7 +41,9 @@
                             </div>
                         </div>
                     </section>
-                    <section class="l-service l-section">
+                </div>
+                <div class="wow fadeInRight"　data-wow-duration="3s" data-wow-offset="300">
+                    <section class="l-service l-section" id="top-service">
                         <div class="l-container--big">
                             <h2 class="c-title--center">SERVICE</h2>
                             <ul class="p-top_service_cont">
@@ -65,8 +68,9 @@
                             </ul>
                         </div>
                     </section>
-
-                    <section class="p-top_works l-section">
+                </div>
+                <div class="wow fadeIn"　data-wow-duration="3s" data-wow-offset="300">
+                    <section class="p-top_works l-section" id="top-works">
                         <div class="l-container">
                             <h2 class="c-title">WORKS</h2>
 
@@ -123,7 +127,10 @@
                             </ul>
                         </div>
                     </section>
-                    <section class="p-top_news l-section">
+                </div>
+
+                    <div class="wow fadeInUp"　data-wow-duration="3s" data-wow-offset="300">
+                    <section class="p-top_news l-section" id="top-news">
                         <div class="l-container--big">
                             <h2 class="c-title--center">NEWS</h2>
 
@@ -159,6 +166,7 @@
                             <a href="" class="c-button--center">MORE...</a>
                         </div>
                     </section>
+                </div>
                 </main>
 
             <%- include('../_include/_footer') %>
